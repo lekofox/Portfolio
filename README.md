@@ -6,7 +6,7 @@ Meu portfólio pessoal
 
  ## Icons
 
-     :new: Nova funcionalidade
-     :pencil2: Atualização
-     :honeybee: Correção de Bug
-     :rocket: Release
+    - :new: Nova funcionalidade
+    - :pencil2: Atualização
+    - :honeybee: Correção de Bug
+    - :rocket: Release
