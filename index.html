@@ -24,34 +24,35 @@
             <div class="line" id="line3"></div>
         </div>
 
-        <header>
+        <header id='home'>
             <div class="img-wrapper">
                 <img src="./pictures/bg.jpg" alt="background">
             </div>
-            <div class="banner">
+            <div class="banner" >
                 <h1>Full-Stack Developer - Gama Alumni</h1>
                 <p>Leandro Dias</p>
-                <button>Saiba mais</button>
-            </div>    
+                <a href="#conhecimentos"><button>Saiba mais</button></a>
+            </div>
         </header>
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/srraposao/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/leandro-dias-2a2985106/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lekofox/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id='conhecimentos'>
+            <div class="separador"></div>
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -115,20 +116,23 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id='projetos'>
+            <div class="separador"></div>
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
             <div class="projetos">
                 <div class="card">
                     <div class="card-img-wrapper">
-                    <img src="./pictures/projeto1.png" alt="">
+                        <img src="./pictures/projeto1.png" alt="">
                     </div>
                     <div class="card-info">
                         <h2>Exemplo 1</h2>
                         <h3>HTML</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus culpa suscipit magnam, molestiae quidem quo, omnis nobis impedit, quia ipsum. Totam quae expedita eaque molestiae dicta deleniti obcaecati error.</p>
-                        <button>Saiba mais</button>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus culpa suscipit
+                            magnam, molestiae quidem quo, omnis nobis impedit, quia ipsum. Totam quae expedita eaque
+                            molestiae dicta deleniti obcaecati error.</p>
+                        <button class>Saiba mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -138,7 +142,9 @@
                     <div class="card-info">
                         <h2>Exemplo 2</h2>
                         <h3>React</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at impedit blanditiis, deserunt consequuntur magni quis perferendis nihil dolor vero vel quisquam recusandae iusto excepturi libero, iste facilis. Quam, repudiandae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at impedit blanditiis,
+                            deserunt consequuntur magni quis perferendis nihil dolor vero vel quisquam recusandae iusto
+                            excepturi libero, iste facilis. Quam, repudiandae.</p>
                         <button>Saiba Mais</button>
                     </div>
                 </div>
@@ -149,16 +155,86 @@
                     <div class="card-info">
                         <h2>Exemplo 3</h2>
                         <h3>Node</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tenetur et enim quasi voluptate qui fugit porro laboriosam, quos earum rerum nulla iusto aliquid laudantium velit nam voluptas sint vel?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tenetur et enim quasi
+                            voluptate qui fugit porro laboriosam, quos earum rerum nulla iusto aliquid laudantium velit
+                            nam voluptas sint vel?</p>
                         <button>Saiba mais</button>
                     </div>
                 </div>
-                </div>
             </div>
-        </section>
+    </div>
+    </section>
+    <div class='separador'>
+
+    </div>
+    <section class="sessao-contato" id='contato'>
+        <div class="contato-wrapper">
+            <div class="contato-left"></div>
+            <div class="contato-right">
+                <h1>Contato</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="field" id='nome'>
+                        <label for='nome' class="field-label">Nome</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="field" id='email'>
+                        <label for='email' class="field-label">E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="field" id='mensagem'></textarea>
+                        <label for='mensagem' class="field-label">Mensagem</label>
+                    </div>
+                    <button class='' type='submit'>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="sessao-orcamento" id='orcamento'>
+        <div class="orcamento-wrapper">
+            <h1>Faça um orçamento</h1>
+            <form>
+                <label for="qtde">Quantidade de páginas</label>
+                <input type="number" min='1'name='qtde' id='qtde'>
+                <label for="js">Preciso de um script JS</label>
+                <input type="checkbox" name='js' id='js'>
+                <label>Layout</label>
+                <div class="group-layout">
+                    <div>
+                        <input type='radio' name='layout' id='layout-sim'>
+                        <label for="layout-sim">Preciso de um Layout</label>
+                    </div>
+                    <div>
+                        <input type='radio' name='layout' id='layout-nao'>
+                        <label for="layout-sim">Já tenho um layout</label>
+                    </div>
+                </div>
+                <label for="prazo">Prazo</label>
+                    <input type='range' name='prazo' id='prazo'>
+                    <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2021, Leandro Dias - Todos direitos reservados</p>
+            <div class="social-list">
+                <ul>
+                    <li><a href="https://www.facebook.com/srraposao/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/leandro-dias-2a2985106/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                    <li><a href="https://github.com/lekofox/Portfolio" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+         
+            </div>
+        </div>
+    </footer>
+    <a href="#home" class="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     </div>
 
 </body>
 
 <script src="script.js"></script>
+
 </html>
